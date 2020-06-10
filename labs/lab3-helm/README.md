@@ -9,7 +9,7 @@ Run
 ``` bash
 helm version
 ```
-to make sure that Helm has been installed successfully.
+to make sure that Helm v3 has been installed successfully.
 ![helm-version](https://github.com/christopherchai/k8s-GKE-Hipster-Shop/blob/master/assets/helm-version.JPG)
 Note: Make sure that <b>/usr/local/bin</b> is added to <b>$PATH</b>, or Helm command cannot be run.
 
@@ -69,6 +69,17 @@ Install OneAgent Operator.
 ``` bash
 helm install dynatrace-oneagent-operator dynatrace/dynatrace-oneagent-operator -n dynatrace --values values.yaml
 ```
+If you encounter problem such as <b>Error: could not find tiller</b>, run
+``` bash
+helm init --wait
+```
+
+Cheatsheet:
+``` bash
+helm repo update
+helm search repo dynatrace-oneagent-operator
+helm upgrade dynatrace-oneagent-operator dynatrace/dynatrace-oneagent-operator -n dynatrace --reuse-values
+helm uninstall dynatrace-oneagent-operator -n dynatrace
 
 :arrow_up: [Back to TOC](/README.md) :arrow_left: [Prev](../lab2/README.md)   :arrow_right: [Next](../lab3/README.md)  
 
