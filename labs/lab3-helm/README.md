@@ -1,4 +1,5 @@
 # Install Dynatrace OneAgent Operator for Kubernetes via Helm
+<b>Note:</b> If you want to try Google Marketplace then skip this and go to next page.
 We'll start by installing Helm.
 ``` bash
 curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get-helm-3 > get_helm.sh
