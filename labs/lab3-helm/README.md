@@ -80,6 +80,7 @@ helm repo update
 helm search repo dynatrace-oneagent-operator
 helm upgrade dynatrace-oneagent-operator dynatrace/dynatrace-oneagent-operator -n dynatrace --reuse-values
 helm uninstall dynatrace-oneagent-operator -n dynatrace
+```
 
 :arrow_up: [Back to TOC](/README.md) :arrow_left: [Prev](../lab2/README.md)   :arrow_right: [Next](../lab3/README.md)  
 
