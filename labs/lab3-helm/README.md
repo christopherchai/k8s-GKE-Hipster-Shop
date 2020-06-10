@@ -1,5 +1,5 @@
 # Install Dynatrace OneAgent Operator for Kubernetes via Helm
-1. We'll start by installing Helm.
+We'll start by installing Helm.
 ``` bash
 curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get-helm-3 > get_helm.sh
 chmod 700 get_helm.sh
@@ -13,7 +13,7 @@ to make sure that Helm has been installed successfully.
 ![helm-version](https://github.com/christopherchai/k8s-GKE-Hipster-Shop/blob/master/assets/helm-version.JPG)
 Note: Make sure that <b>/usr/local/bin</b> is added to <b>$PATH</b>, or Helm command cannot be run.
 
-2. Obtain API token and PaaS token from Dynatrace.
+Obtain API token and PaaS token from Dynatrace.
 - API token <br>
 Create one from Settings -> Integration -> Dynatrace API
   - Enable Access problem and event feed, metrics, and topology toggle
@@ -23,17 +23,17 @@ Create one from Settings -> Integration -> Dynatrace API
 Create one from Settings -> Integration -> Platform as a Service
 ![PaaS-Token](https://github.com/Dynatrace-APAC/Workshop-Kubernetes/blob/master/assets/paas-token.png)
 
-3. Add Dynatrace OneAgent Helm repository
+Add Dynatrace OneAgent Helm repository
 ``` bash
 helm repo add dynatrace https://raw.githubusercontent.com/Dynatrace/helm-charts/master/repos/stable
 ```
 
-4. Create a Dynatrace namespace.
+Create a Dynatrace namespace.
 ``` bash
 kubectl create namespace dynatrace
 ```
 
-5. Create a <b>values.yaml</b> file with the following content.
+Create a <b>values.yaml</b> file with the following content.
 ``` bash
 platform: "kubernetes"
 operator:
@@ -65,7 +65,7 @@ secret:
 ```
 See values.yaml in this repo for reference. Using values.yaml you will be able to pass OneAgent arguments like HOSTGROUP in args.
 
-6. Install OneAgent Operator.
+Install OneAgent Operator.
 ``` bash
 helm install dynatrace-oneagent-operator dynatrace/dynatrace-oneagent-operator -n dynatrace --values values.yaml
 ```
