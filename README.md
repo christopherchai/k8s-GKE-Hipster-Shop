@@ -16,6 +16,8 @@ For the purposes of the Hands-On, we will automate and make the steps seamless f
 
 [**Lab 2:** Install K8S Integration](/labs/lab2)
 
+Try either Helm or Google Marketplace:
+
 [**Lab 3:** Setup k8s Operator via Helm](/labs/lab3-helm)
 
 [**Lab 3:** Setup k8s Operator via Google Marketplace](/labs/lab3)
