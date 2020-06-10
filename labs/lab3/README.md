@@ -1,4 +1,5 @@
-# Install Dynatrace OneAgent Operator for Kubernetes
+# Install Dynatrace OneAgent Operator for Kubernetes via Google Marketplace
+<b>Note:</b> If you have already installed OneAgent Operator via Helm, skip this and go to next page.
 
 1. On your Google Cloud Console, on the left navigational bar, go to Kubernetes Engine -> Applications
 2. Click on "Deploy From Marketplace"
