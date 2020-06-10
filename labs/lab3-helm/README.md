@@ -11,6 +11,7 @@ helm version
 ```
 to make sure that Helm has been installed successfully.
 ![helm-version](https://github.com/christopherchai/k8s-GKE-Hipster-Shop/blob/master/assets/helm-version.JPG)
+Note: Make sure that <b>/usr/local/bin</b> is added to <b>$PATH</b>. 
 
 1. On your Google Cloud Console, on the left navigational bar, go to Kubernetes Engine -> Applications
 2. Click on "Deploy From Marketplace"
