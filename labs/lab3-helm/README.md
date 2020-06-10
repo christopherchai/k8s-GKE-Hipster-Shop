@@ -19,12 +19,21 @@ Create one from Settings -> Integration -> Dynatrace API
   - Enable Access problem and event feed, metrics, and topology toggle
   - Enable Write Configuration toggle (needed for Activegate setup for the next step)<br>
 ![API-Token](https://github.com/Dynatrace-APAC/Workshop-Kubernetes/blob/master/assets/api-token.png)
-
 - PaaS token <br>
 Create one from Settings -> Integration -> Platform as a Service
 ![PaaS-Token](https://github.com/Dynatrace-APAC/Workshop-Kubernetes/blob/master/assets/paas-token.png)
 
+3. Add Dynatrace OneAgent Helm repository
+``` bash
+helm repo add dynatrace https://raw.githubusercontent.com/Dynatrace/helm-charts/master/repos/stable
+```
 
+4. Create a Dynatrace namespace
+``` bash
+kubectl create namespace dynatrace
+```
+
+5. 
 
 :arrow_up: [Back to TOC](/README.md) :arrow_left: [Prev](../lab2/README.md)   :arrow_right: [Next](../lab3/README.md)  
 
