@@ -14,7 +14,7 @@ For the purposes of the Hands-On, we will automate and make the steps seamless f
 
 [**Lab 1:** Setup your GKE Environment](/labs/lab1)
 
-[**Lab 2:** Install K8S Integration](/labs/lab2)
+[**Lab 2:** Setup k8s Integration](/labs/lab2)
 
 Try either Helm or Google Marketplace:
 
