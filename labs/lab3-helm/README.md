@@ -63,7 +63,7 @@ secret:
   apiToken: "DYNATRACE_API_TOKEN"
   paasToken: "PLATFORM_AS_A_SERVICE_TOKEN"
 ```
-See values.yaml in this repo for reference. Using values.yaml you will be able to pass OneAgent arguments like HOSTGROUP in args.
+See <b>values.yaml</b> in this repo for reference. Using <b>values.yaml</b> you will be able to pass OneAgent arguments like HOSTGROUP in args.
 
 Install OneAgent Operator.
 ``` bash
