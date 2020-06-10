@@ -28,12 +28,47 @@ Create one from Settings -> Integration -> Platform as a Service
 helm repo add dynatrace https://raw.githubusercontent.com/Dynatrace/helm-charts/master/repos/stable
 ```
 
-4. Create a Dynatrace namespace
+4. Create a Dynatrace namespace.
 ``` bash
 kubectl create namespace dynatrace
 ```
 
-5. 
+5. Create a <b>values.yaml</b> file with the following content.
+``` bash
+platform: "kubernetes"
+operator:
+  image: ""
+oneagent:
+  name: "oneagent"
+  apiUrl: "https://ENVIRONMENTID.live.dynatrace.com/api"
+  image: ""
+  args:
+    - --set-app-log-content-access=true
+  env:
+    - name: ONEAGENT_ENABLE_VOLUME_STORAGE
+      value: "true"
+  nodeSelector: {}
+  labels: {}
+  skipCertCheck: false
+  disableAgentUpdate: false
+  enableIstio: false
+  dnsPolicy: ""
+  resources: {}
+  waitReadySeconds: null
+  priorityClassName: ""
+  serviceAccountName: ""
+  proxy: ""
+  trustedCAs: ""
+secret:
+  apiToken: "DYNATRACE_API_TOKEN"
+  paasToken: "PLATFORM_AS_A_SERVICE_TOKEN"
+```
+See values.yaml in this repo for reference. Using values.yaml you will be able to pass OneAgent arguments like HOSTGROUP in args.
+
+6. Install OneAgent Operator.
+``` bash
+helm install dynatrace-oneagent-operator dynatrace/dynatrace-oneagent-operator -n dynatrace --values values.yaml
+```
 
 :arrow_up: [Back to TOC](/README.md) :arrow_left: [Prev](../lab2/README.md)   :arrow_right: [Next](../lab3/README.md)  
 
