@@ -63,7 +63,7 @@ secret:
   apiToken: "DYNATRACE_API_TOKEN"
   paasToken: "PLATFORM_AS_A_SERVICE_TOKEN"
 ```
-See <b>values.yaml</b> in this repo for reference. Using <b>values.yaml</b> you will be able to pass OneAgent arguments like HOSTGROUP and --set-network-zone=<your.network.zone> in args.
+See <b>values.yaml</b> in this repo for reference. Using <b>values.yaml</b> you will be able to pass OneAgent arguments like HOST_GROUP and --set-network-zone=<your.network.zone> in args.
 
 Install OneAgent Operator.
 ``` bash
