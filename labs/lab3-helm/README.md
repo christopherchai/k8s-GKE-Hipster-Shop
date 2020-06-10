@@ -11,7 +11,16 @@ helm version
 ```
 to make sure that Helm has been installed successfully.
 ![helm-version](https://github.com/christopherchai/k8s-GKE-Hipster-Shop/blob/master/assets/helm-version.JPG)
-Note: Make sure that <b>/usr/local/bin</b> is added to <b>$PATH</b>. 
+Note: Make sure that <b>/usr/local/bin</b> is added to <b>$PATH</b>, or Helm command cannot be run.
+- API Token <br>
+Create one from Settings -> Integration -> Dynatrace API
+  - Enable Access problem and event feed, metrics, and topology toggle
+  - Enable Write Configuration toggle (needed for Activegate setup for the next step)<br>
+![API-Token](https://github.com/Dynatrace-APAC/Workshop-Kubernetes/blob/master/assets/api-token.png)
+
+- PaaS token <br>
+Create one from Settings -> Integration -> Platform as a Service
+![PaaS-Token](https://github.com/Dynatrace-APAC/Workshop-Kubernetes/blob/master/assets/paas-token.png)
 
 1. On your Google Cloud Console, on the left navigational bar, go to Kubernetes Engine -> Applications
 2. Click on "Deploy From Marketplace"
