@@ -46,7 +46,7 @@ gcloud compute instances create dynatrace-activegate --image-family ubuntu-1604-
 
 Once completed, you will have a running GKE Cluster!
 
-![GKE-CLI](https://github.com/Dynatrace-APAC/Workshop-Kubernetes/blob/master/assets/gcp.png)
+![GKE-CLI](https://github.com/christopherchai/k8s-GKE-Hipster-Shop/blob/master/assets/gcp.png)
 Running <b>kubectl get nodes</b> will reveal number of nodes
 
 :arrow_up: [Back to TOC](/README.md)  :arrow_right: [Next](../lab2/README.md)
