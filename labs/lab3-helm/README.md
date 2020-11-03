@@ -12,7 +12,6 @@ Run
 helm version
 ```
 to make sure that Helm v3 has been installed successfully.
-![helm-version](https://github.com/christopherchai/k8s-GKE-Hipster-Shop/blob/master/assets/helm-version.JPG)
 
 <b>Note:</b> Make sure that <b>/usr/local/bin</b> is added to <b>$PATH</b>, or Helm command cannot be run.
 
