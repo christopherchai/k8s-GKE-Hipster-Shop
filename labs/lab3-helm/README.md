@@ -21,10 +21,10 @@ Obtain API token and PaaS token from Dynatrace.
 Create one from Settings -> Integration -> Dynatrace API
   - Enable Access problem and event feed, metrics, and topology toggle
   - Enable Write Configuration toggle (needed for Activegate setup for the next step)<br>
-![API-Token](https://github.com/Dynatrace-APAC/Workshop-Kubernetes/blob/master/assets/api-token.png)
+![API-Token](https://github.com/christopherchai/k8s-GKE-Hipster-Shop/blob/master/assets/api-token.png)
 - PaaS token <br>
 Create one from Settings -> Integration -> Platform as a Service
-![PaaS-Token](https://github.com/Dynatrace-APAC/Workshop-Kubernetes/blob/master/assets/paas-token.png)
+![PaaS-Token](https://github.com/christopherchai/k8s-GKE-Hipster-Shop/blob/master/assets/paas-token.png)
 
 Add Dynatrace OneAgent Helm repository
 ``` bash
