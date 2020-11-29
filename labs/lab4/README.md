@@ -18,4 +18,4 @@ Once running, you can go to the exposed frontend-external IP to go to Hipster Sh
 
 :arrow_up: [Back to TOC](/README.md) :arrow_left: [Prev](../lab3/README.md)   :arrow_right: [Next](../lab5/README.md)  
 
-
+If required, use ```bash kubectl delete deploy -n hipster-shop --all ``` to delete all hipster-shop pods permanently.
