@@ -19,7 +19,7 @@ spec:
       containers:
       - name: server
         #image: perform2019.azurecr.io/emailservice:latest
-        image: gcr.io/google-samples/microservices-demo/emailservice:v0.2.1
+        image: gcr.io/google-samples/microservices-demo/emailservice:v0.1.3
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
@@ -80,7 +80,7 @@ spec:
       containers:
         - name: server
           #image: perform2019.azurecr.io/checkoutservice:latest
-          image: gcr.io/google-samples/microservices-demo/checkoutservice:v0.2.1
+          image: gcr.io/google-samples/microservices-demo/checkoutservice:v0.1.3
           imagePullPolicy: Always
           ports:
           - containerPort: 5050
@@ -149,7 +149,7 @@ spec:
       containers:
       - name: server
         #image: perform2019.azurecr.io/recommendationservice:latest
-        image: gcr.io/google-samples/microservices-demo/recommendationservice:v0.2.1
+        image: gcr.io/google-samples/microservices-demo/recommendationservice:v0.1.3
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -211,7 +211,7 @@ spec:
       containers:
         - name: server
           #image: perform2019.azurecr.io/frontend:latest
-          image: gcr.io/google-samples/microservices-demo/frontend:v0.2.1
+          image: gcr.io/google-samples/microservices-demo/frontend:v0.1.3
           imagePullPolicy: Always
           ports:
           - containerPort: 8080
@@ -308,7 +308,7 @@ spec:
       containers:
       - name: server
         #image: perform2019.azurecr.io/paymentservice:memoryleak
-        image: gcr.io/google-samples/microservices-demo/paymentservice:v0.2.1
+        image: gcr.io/google-samples/microservices-demo/paymentservice:v0.1.3
         imagePullPolicy: Always
         ports:
         - containerPort: 50051
@@ -367,7 +367,7 @@ spec:
       containers:
       - name: server
         #image: perform2019.azurecr.io/productcatalogservice:latest
-        image: gcr.io/google-samples/microservices-demo/productcatalogservice:v0.2.1
+        image: gcr.io/google-samples/microservices-demo/productcatalogservice:v0.1.3
         imagePullPolicy: Always
         ports:
         - containerPort: 3550
@@ -423,7 +423,7 @@ spec:
       containers:
       - name: server
 #        image: perform2019.azurecr.io/cartservice:0.1.3
-        image: gcr.io/google-samples/microservices-demo/cartservice:v0.2.1
+        image: gcr.io/google-samples/microservices-demo/cartservice:v0.1.3
         ports:
         - containerPort: 7070
         env:
@@ -497,7 +497,7 @@ spec:
       containers:
       - name: main
         #image: perform2019.azurecr.io/loadgenerator:latest
-        image: gcr.io/google-samples/microservices-demo/loadgenerator:v0.2.1
+        image: gcr.io/google-samples/microservices-demo/loadgenerator:v0.1.3
         imagePullPolicy: Always
         env:
         - name: FRONTEND_ADDR
@@ -533,7 +533,7 @@ spec:
       containers:
       - name: server
         #image: perform2019.azurecr.io/currencyservice:latest
-        image: gcr.io/google-samples/microservices-demo/currencyservice:v0.2.1
+        image: gcr.io/google-samples/microservices-demo/currencyservice:v0.1.3
         imagePullPolicy: Always
         ports:
         - name: grpc
@@ -588,7 +588,7 @@ spec:
       containers:
       - name: server
         #image: perform2019.azurecr.io/shippingservice:latest
-        image: gcr.io/google-samples/microservices-demo/shippingservice:v0.2.1
+        image: gcr.io/google-samples/microservices-demo/shippingservice:v0.1.3
         imagePullPolicy: Always
         ports:
         - containerPort: 50051
@@ -704,7 +704,7 @@ spec:
       containers:
       - name: server
         #image: perform2019.azurecr.io/adservice:latest
-        image: gcr.io/google-samples/microservices-demo/adservice:v0.2.1
+        image: gcr.io/google-samples/microservices-demo/adservice:v0.1.3
         imagePullPolicy: Always
         ports:
         - containerPort: 9555
