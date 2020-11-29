@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-REGISTRYURL=perform2019.azurecr.io
+REGISTRYURL=gcr.io/google-samples/microservices-demo
 REGISTRYUSER=Perform2019
 REGISTRYPASS=0bzP54BsVNxfoDh0bf39VE7Wvy2OT7T+
 
@@ -13,6 +13,8 @@ kubectl -n hipster-shop  create rolebinding default-view --clusterrole=view --se
 
 #deploy sample app
 kubectl -n hipster-shop create secret docker-registry demo-registry --docker-server=$REGISTRYURL --docker-username=$REGISTRYUSER --docker-password=$REGISTRYPASS
-wget https://raw.githubusercontent.com/Dynatrace-APAC/Workshop-Kubernetes/master/k8s-manifest.yaml
+kubectl -n hipster-shop create secret docker-registry demo-registry --docker-server=$REGISTRYURL
+#wget https://raw.githubusercontent.com/Dynatrace-APAC/Workshop-Kubernetes/master/k8s-manifest.yaml
+wget https://raw.githubusercontent.com/christopherchai/k8s-GKE-Hipster-Shop/master/k8s-manifest.yaml
 kubectl -n hipster-shop apply -f k8s-manifest.yaml 
 #kubectl -n hipster-shop apply -f ../test-app/hipster-shop/k8s/istio-ingress.yaml
